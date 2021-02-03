@@ -13,10 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{976279bc-4f64-454a-a255-c1f78406cc64}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\script\test0.lua">
+      <Filter>script</Filter>
+    </None>
+    <None Include="bin\script\test1.lua">
+      <Filter>script</Filter>
+    </None>
   </ItemGroup>
 </Project>

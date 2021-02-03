@@ -44,9 +44,10 @@ static void dump(lua_State* L)
 	return;
 }
 
-static void bail(lua_State* L)
+static int bail(lua_State* L)
 {
 	printf("加载文件错误:\n\t%s\n", lua_tostring(L, -1));
+	return 0;
 }
 
 int call_err(lua_State* L)
@@ -91,5 +92,7 @@ int main()
 	cout << "来自lua的返回 " << lua_tonumber(L, -1) << endl;
 
 	lua_close(L);
+
+	system("pause");
 	return 0;
 }
